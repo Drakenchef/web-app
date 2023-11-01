@@ -4,15 +4,15 @@ services:
     image: postgres:12 
     volumes: 
       - type: volume
-        source: k1ngSochialMedia
+        source: web-app
         target: /var/lib/postgresql/data
     ports:
       - "2727:5432"
     environment: 
-      POSTGRES_USER: king
-      POSTGRES_DB: kingSochialMedia
-      POSTGRES_PASSWORD: king
+      POSTGRES_USER: drakenchef
+      POSTGRES_DB: drakenchef
+      POSTGRES_PASSWORD: drakenchef
 
 volumes:
-  k1ngSochialMedia:
+  web-app:
     driver: local
